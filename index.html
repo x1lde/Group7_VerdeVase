@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VerdeVase</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="assets/logo/favicon.ico">
+</head>
+<body>
+<section class="header" id="Home">
+    <div class="bg">
+    <video autoplay muted loop playsinline id="bg-video">
+        <source src="assets/background/bamboo_bg2.mp4" type="video/mp4">
+    </video>
+    </div>
+    <nav>
+        <a href="index.html"><img src="assets/logo/vv_logo.png"></a>
+        <div class="nav_links" id="navLinks">
+            <i class="fa-regular fa-circle-xmark" onclick="hideMenu()"></i>
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="#About">ABOUT</a></li>
+                <li><a href="#Product">PRODUCT</a></li>
+            </ul>
+        </div>
+        <i class="fa-regular fa-compass" onclick="showMenu()"></i>
+    </nav>
+
+ <div class="content">
+    <h1 data-aos="fade-up" data-aos-delay="200">Rooted in nature.</h1>
+    <p data-aos="fade-up" data-aos-delay="400">Crafted for you.</p>
+    <a href="#About" class="hero_btn" data-aos="zoom-in" data-aos-delay="800">Learn More ></a>
+</div>
+
+</section>
+
+<!--about-->
+<section class="about" id="About">
+    <div class="abt" data-aos="fade-up" data-aos-delay="200">
+        <h1 data-aos="fade-up" data-aos-duration="1200">About VerdeVase</h1>
+            <div class="container">
+                <div id="slide">
+                    <div class="item" style="background-image: url(assets/product/prod1.jfif);">
+                        <div class="content"></div>
+                    </div>
+                    <div class="item" style="background-image: url(assets/product/prod2.jfif);">
+                        <div class="content"></div>
+                    </div>
+                    <div class="item" style="background-image: url(assets/product/prod3.jfif);">
+                        <div class="content"></div>
+                    </div>
+                </div>
+                <div class="buttons">
+                    <button id="prev"><i class="fa-regular fa-circle-left"></i></button>
+                    <button id="next"><i class="fa-regular fa-circle-right"></i></button>
+                </div>
+                <!-- indicators -->
+                <div class="indicators">
+                    <span class="dot active"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                </div>
+            </div>
+
+
+        <div class="row">
+            <div class="about_col" data-aos="fade-right" data-aos-delay="100">
+                <h3>Our Design Philosophy</h3>
+                <p>At VerdeVase, we believe true luxury lies in simplicity, sustainability, and soul. 
+                    Each piece is thoughtfully crafted from natural bamboo — a material that embodies strength, renewal, and timeless beauty. 
+                    Our design philosophy merges modern minimalism with organic warmth, celebrating the art of living in harmony with nature. 
+                    Every curve, texture, and finish is intentionally refined to create not just a décor piece, but an experience — one that evokes serenity, 
+                    sophistication, and conscious elegance.
+                </p>
+            </div>
+
+            <div class="about_col" data-aos="fade-up" data-aos-delay="300">
+                <h3>About VerdeVase</h3>
+                <p>A masterpiece of harmony and nature, this handcrafted bamboo design captures the essence of serenity and sophistication. Each curve and crossing line reflects balance, 
+                    while the delicate flowers breathe life into the structure. More than décor, it’s a statement of creativity — where natural beauty and artistry unite.
+                </p>
+            </div>
+
+            <div class="about_col" data-aos="fade-left" data-aos-delay="500">
+                <h3>Why Bamboo?</h3>
+                <p>Bamboo isn’t just beautiful—it’s one of the most sustainable materials on the planet. 
+                    Stronger than many hardwoods yet lightweight, its elegant texture and warm tones bring timeless charm to furniture, décor, and more. 
+                    Growing rapidly and regenerating naturally without chemicals, bamboo is renewable, eco-friendly, and long-lasting, with natural resistance to moisture and pests. 
+                    Choosing bamboo means embracing sustainability, style, and enduring quality.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!--product-->
+<section class="product" id="Product">
+  <div class="product_content">
+    <div class="product_text" data-aos="fade-right">
+      <h1>Our Featured Product</h1>
+      <p>Handcrafted bamboo designs that blend nature and artistry—elegant, sustainable, and thoughtfully made to elevate any space.</p>
+    </div>
+
+    <div class="product_vid" data-aos="fade-left">
+      <video id="prod_vid" controls>
+        <source src="assets/product/prodvid.mov" type="video/mp4">
+      </video>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="footer_content">
+    <div class="footer_brand">
+      <img src="assets/logo/vv_logo.png" alt="VerdeVase Logo">
+      <p>Rooted in nature, crafted with care.</p>
+    </div>
+
+    <div class="footer_links">
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="#About">About</a></li>
+        <li><a href="#Product">Products</a></li>
+      </ul>
+    </div>
+
+    <div class="footer_social">
+      <h4>Follow Us</h4>
+      <div class="social_icons">
+        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+        <a href="#"><i class="fa-brands fa-pinterest"></i></a>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer_bottom">
+    <p>© 2025 VerdeVase. All Rights Reserved.</p>
+  </div>
+</footer>
+
+
+<!--javascript for toggle menu-->
+<script src="script.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init({
+    duration: 1000, // animation duration (ms)
+    once: true, // whether animation happens only once
+  });
+</script>
+
+</body>
+</html>
